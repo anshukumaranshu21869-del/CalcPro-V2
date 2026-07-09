@@ -51,3 +51,57 @@ body{min-height:100vh;color:var(--ink);background:linear-gradient(rgba(215,225,2
 body.light{background:#f5f7ff}
 @media(max-width:480px){.app{padding:12px 10px}.calculator{max-width:390px;padding:20px;border-radius:30px}.top-bar h1{font-size:1.65rem}.display-box{min-height:118px}.result{font-size:2.45rem}.key{min-height:56px;border-radius:24px}.mini-btn{padding:13px 0}.tab{font-size:.62rem}}
 @media(max-width:360px){.calculator{padding:16px}.key{min-height:50px}.display-box{min-height:108px}}
+/* Light/Dark Theme Fix */
+
+body.light {
+  background:
+    radial-gradient(circle at top, #1e1e1e, #050505 65%);
+  color: #ffffff;
+}
+
+body.light .calculator {
+  background: linear-gradient(145deg, #151515, #050505);
+}
+
+body.light .top-bar h1 {
+  color: #ffffff;
+}
+
+body.light .top-bar p,
+body.light .footer {
+  color: #bdbdbd;
+}
+
+body.light .mode-tabs {
+  background: #202020;
+}
+
+body.light .tab {
+  color: #ffffff;
+}
+
+body.light .tab.active {
+  background: #ffffff;
+  color: #000000;
+}
+
+body.light .key,
+body.light .mini-btn {
+  background: #202020;
+  color: #ffffff;
+}
+
+body.light .key.number {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+body.light .key.equal {
+  background: #ffffff;
+  color: #000000;
+}
+
+body.light .theme-btn {
+  background: #ffffff;
+  color: #000000;
+}
